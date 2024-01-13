@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import { Link } from 'gatsby-link';
 import Layout from '../components/layout';
 
 // main page component that user lands on
@@ -13,10 +14,8 @@ const ContactPage = () => {
         <p className='font-bold text-6xl py-4'>contact</p>
         <p className='font-bold text-2xl '>reach out!</p>
         
-        <p className='font-semibold text-2xl py-1'>email: contact@vikramp.me</p>
-        <p className='font-semibold text-2xl py-1'>linkedin: linkedin.com/in/vpeddinti</p>
-        <p className='font-semibold text-2xl py-1'>itch.io: linkedin.com/in/vpeddinti</p>
-        <p className='font-semibold text-2xl py-1'>linkedin: linkedin.com/in/vpeddinti</p>
+        <p className='text-2xl py-1'>email: {<Link className='hover:underline' to={"mailto:contact@vikramp.me"}>contact@vikramp.me</Link>}</p>
+        <p className='text-2xl py-1'>linkedin: {<Link className='hover:underline' to={"https://linkedin.com/in/vpeddinti"}>linkedin.com/in/vpeddinti</Link>}</p>
       </div>
     </Layout>
   )

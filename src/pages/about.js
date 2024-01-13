@@ -18,7 +18,7 @@ const AboutPage = () => {
           </p>
 
           <p className='py-2'>
-            Outside of work you can find me trail running, trying to replicate my restaurant foods at home, or just wandering somewhere out in the hills with my wife & my dog. I love walking everywhere & truly love food so please send recs :) If you ever want to connect feel free to reach out to me!
+            Outside of work you can find me trail running, trying to replicate my restaurant foods at home, or just wandering somewhere out in the hills with my wife & my dog. I love walking everywhere & love to eat so please send recs :) If you ever want to connect feel free to reach out to me!
           </p>
 
         </div>
