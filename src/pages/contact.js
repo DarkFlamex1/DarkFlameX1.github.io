@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 const ContactPage = () => {
   return(
     <Layout currPage='contact'>
-      <div className='bg-stone-100 flex flex-col grow px-6 sm:px-12 md:px-18 lg:px-30 xl:px-60'>
+      <div className='bg-stone-100 flex flex-col grow px-6 sm:px-12 md:px-18 lg:px-30 xl:px-60 items-center'>
         {/* Contact page with github and other
          media */}
         

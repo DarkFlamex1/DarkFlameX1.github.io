@@ -19,7 +19,7 @@ const IndexPage = () => {
   React.useEffect(() => {
     const id = setTimeout(
       () => setCurrentIndex((currentIndex + 1) % taglineArray.length),
-      3000
+      1500
     );
     return () => {
       clearInterval(id); // removes React warning when gets unmounted
