@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 const AboutPage = () => {
   return (
     <Layout>
-      <div className='bg-stone-100 flex flex-col grow px-6 sm:px-12 md:px-18 lg:px-30 xl:px-40'>
+      <div className='bg-stone-100 flex flex-col grow px-6 sm:px-12 md:px-18 lg:px-30 xl:px-60'>
         {/* Full name and tag line */}
         <p className='font-bold text-6xl'>about me</p>
 
