@@ -19,8 +19,8 @@ const barLinks = [
     url: "/about"
   },
   {
-    name: "projects",
-    url: "/projects"
+    name: "experiments",
+    url: "/experiments"
   },
   {
     name: "contact",
@@ -28,23 +28,21 @@ const barLinks = [
   }
 ]
 
-
-
 // main page component that user lands on
-const Navbar = () => {
+const Navbar = ({currPage}) => {
   return(
     <header>
       {/* Use a flex bar
       */}
-      <nav className='bg-stone-100 py-5'>
+      <nav className=' py-5'>
         <div className='flex justify-center items-center'>
           {/* Add each item in the flex container */}
 
           <div className='flex-none font-semibold text-lg md:text-xl px-6'>
           {
           barLinks.map((link, i, row) => (
-                  <span key={link.name}>
-                  <Link className='hover:underline' to={link.url}>{link.name}</Link>
+                <span key={link.name}>
+                  <Link className={currPage == link.name ? 'font-bold underline' : 'hover:underline'} to={link.url}>{link.name}</Link>
                   {(i + 1 !== row.length) && (<span>&nbsp;|&nbsp;</span>)}
                 </span>
           ))
