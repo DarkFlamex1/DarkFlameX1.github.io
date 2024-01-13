@@ -7,11 +7,17 @@
  */
 
 import * as React from 'react';
+import Navbar from './navbar';
 
 // main page component that user lands on
 const Layout = ({children}) => {
   return(
-    <main>{children}</main>
+    <div className='flex flex-col h-dvh'>
+      <Navbar></Navbar>
+      <main className='flex h-full'>{children}</main>
+    </div>
+
+    
   )
 }
 
