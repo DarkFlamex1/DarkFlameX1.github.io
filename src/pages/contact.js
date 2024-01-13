@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 
 
 // main page component that user lands on
-const IndexPage = () => {
+const ContactPage = () => {
   return(
     <Layout>
       <div className='bg-stone-100 flex flex-col grow justify-center items-center'>
@@ -16,4 +16,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage;
+export default ContactPage;

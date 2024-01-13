@@ -12,12 +12,10 @@ import Navbar from './navbar';
 // main page component that user lands on
 const Layout = ({children}) => {
   return(
-    <div className='flex flex-col h-dvh'>
+    <div className='flex flex-col h-dvh w-dvw'>
       <Navbar></Navbar>
-      <main className='flex h-full'>{children}</main>
+      <main className='flex h-full w-full'>{children}</main>
     </div>
-
-    
   )
 }
 

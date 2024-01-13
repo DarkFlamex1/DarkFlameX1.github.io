@@ -7,7 +7,7 @@ import * as React from 'react';
 // main page component that user lands on
 const SLink = ({children}) => {
   return(
-    <a className="underline hover:underline-offset-4">{children}</a>
+    <a className="hover:underline">{children}</a>
   )
 }
 

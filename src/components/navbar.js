@@ -11,12 +11,11 @@ const Navbar = () => {
     <header>
       {/* Use a flex bar
       */}
-      <nav className='bg-slate-400 py-10'>
-        <div className='flex justify-between items-center'>
+      <nav className='bg-stone-100 py-5'>
+        <div className='flex justify-center items-center'>
           {/* Add each item in the flex container */}
-          <div className='flex-none'><SLink>Home</SLink> | <SLink>About</SLink> | <SLink>Projects</SLink> | <SLink>Blog</SLink></div>
-          <div className='flex-1'>02</div>
-          <div className='flex-1'>02</div>
+          <div className='flex-none font-semibold text-lg md:text-xl px-6'>
+            <SLink>home</SLink> | <SLink>about</SLink> | <SLink>projects</SLink> | <SLink>contact</SLink></div>
         </div>
       </nav>
 
