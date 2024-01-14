@@ -3,7 +3,6 @@
  */
 
 import * as React from 'react';
-import SLink from './SLink';
 import { Link } from 'gatsby';
 
 // Inspired by https://github.com/64bitpandas/bencuan.me/blob/main/src/components/header.js

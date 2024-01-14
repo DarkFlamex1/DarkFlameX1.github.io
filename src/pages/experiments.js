@@ -2,6 +2,7 @@ import * as React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Layout from '../components/layout';
 import { faLink} from '@fortawesome/free-solid-svg-icons';
+import JSONData from "../data/experimentsData.json";
 
 // attempted to create the design of the projects page here: https://www.shiyunlu.com/projects/
 
@@ -40,15 +41,12 @@ const ExperimentsPage = () => {
         {/* 
         Create a grid(column stacking) that contains every project from the DB? 
         Date, Title, Tech tags, line/information, image
-        
         */}
         <div className='columns-1'>
-            <Experiment projectDate={'Jan 2024'} projectWebsite={'https://darkflamex1.github.io'} title={'vikramp.me'} description={'First iteration of this current website made with gatsbyjs & tailwindcss.'}></Experiment>
-            <Experiment projectDate={'Jan 2024'} title={'yet another fps experiment'} description={'An attempt to make a singleplayer fps prototype in unity set in a dark mysterious world. Additional information can be found on itch.io or my blog.'}></Experiment>
-            <Experiment projectDate={'2023'}></Experiment>
-            <Experiment projectDate={'2023'}></Experiment>
+            {JSONData.array.map((data) => (
+              <Experiment projectDate={data.projectDate} projectWebsite={data.projectWebsite} title={data.title} description={data.description}></Experiment>
+            ))}
         </div>
-
       </div>
     </Layout>
   )

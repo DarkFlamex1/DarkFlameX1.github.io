@@ -1,0 +1,28 @@
+{
+    "array": [
+      {
+        "projectDate": "Jan 2024",
+        "title": "vikramp.me",
+        "description": "First iteration of this current website made with gatsbyjs & tailwindcss.",
+        "projectWebsite": "https://darkflamex1.github.me"
+      },
+      {
+        "projectDate": "Jan 2024",
+        "title": "yet another lowpoly fps",
+        "description": "An attempt to make a singleplayer fps prototype in unity set in a dark mysterious world. Additional information can be found on itch.io or my blog.",
+        "projectWebsite": ""
+      },
+      {
+        "projectDate": "Jan 2024",
+        "title": "yet another lowpoly fps",
+        "description": "An attempt to make a singleplayer fps prototype in unity set in a dark mysterious world. Additional information can be found on itch.io or my blog.",
+        "projectWebsite": ""
+      },
+      {
+        "projectDate": "Jan 2023",
+        "title": "vikramp.me",
+        "description": "This is a long winded explanation about the project.",
+        "projectWebsite": "https://vikramp.me"
+      }
+    ]
+  }
