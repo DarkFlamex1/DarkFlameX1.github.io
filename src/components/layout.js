@@ -18,7 +18,7 @@ const Layout = ({currPage, children}) => {
       <main className='flex h-full w-full'>{children}</main>
       <footer className='font-light flex px-5 my-10'>
         <span>2024 |&nbsp;</span>
-        <Link className='hover:underline' to={"https:/github.com/"}>source</Link>
+        <a className='hover:underline' href="https://github.com/DarkFlamex1/personal-portfolio/tree/dev-2024/">source</a>
       </footer>
     </div>
   )

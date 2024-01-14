@@ -1,7 +1,12 @@
 import * as React from 'react';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from 'gatsby-link';
 import Layout from '../components/layout';
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelopeOpen} from '@fortawesome/free-regular-svg-icons';
+
+
 
 // main page component that user lands on
 const ContactPage = () => {
@@ -14,8 +19,8 @@ const ContactPage = () => {
         <p className='font-bold text-6xl py-4'>contact</p>
         <p className='font-bold text-2xl '>reach out!</p>
         
-        <p className='text-2xl py-1'>email: {<Link className='hover:underline' to={"mailto:contact@vikramp.me"}>contact@vikramp.me</Link>}</p>
-        <p className='text-2xl py-1'>linkedin: {<Link className='hover:underline' to={"https://linkedin.com/in/vpeddinti"}>linkedin.com/in/vpeddinti</Link>}</p>
+        <p className='text-2xl py-1'><FontAwesomeIcon icon={faEnvelopeOpen} size="sm" className="px-2" />email: {<Link className='hover:underline hover:text-blue-600' to={"mailto:contact@vikramp.me"}>contact@vikramp.me</Link>}</p>
+        <p className='text-2xl py-1'><FontAwesomeIcon icon={faLinkedinIn} size="sm" className="px-2" />linkedin: {<Link className='hover:underline hover:text-blue-600' to={"https://linkedin.com/in/vpeddinti"}>linkedin.com/in/vpeddinti</Link>}</p>
       </div>
     </Layout>
   )
